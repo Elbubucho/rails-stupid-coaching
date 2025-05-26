@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="mb-4 border-start border-4 border-secondary">
+    <p class="p-3 "><%= params[:question] %></p>
+    <p class="fst-italic mb-0">–You</p>
+  </div>
+
+  <div class="mb-4 border-start border-4 border-secondary answer">
+    <p class="p-3 fw-bold"><%= @answer %></p>
+    <p class="fst-italic mb-0">–Your coach</p>
+  </div>
+  <%= link_to "Ask a new question", ask_path, class: "btn btn-link mt-3" %>
+</div>
